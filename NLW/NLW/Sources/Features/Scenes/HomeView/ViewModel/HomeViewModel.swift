@@ -8,6 +8,9 @@
 import Foundation
 import CoreLocation
 
+import Foundation
+import CoreLocation
+
 class HomeViewModel {
     private let baseURL = "http://localhost:3333"
     var userLatitude = -23.561187293883442
