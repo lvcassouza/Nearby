@@ -10,14 +10,12 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var flowController:  NearbyFlowController?
-
+    var flowController: NearbyFlowController?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        let window = UIWindow(windowScene: windowScene)
         
+        let window = UIWindow(windowScene: windowScene)
         flowController = NearbyFlowController()
         let rootViewController = flowController?.start()
         
@@ -56,4 +54,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
-

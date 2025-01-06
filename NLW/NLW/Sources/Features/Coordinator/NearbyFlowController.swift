@@ -16,11 +16,12 @@ class NearbyFlowController {
     
     func start() -> UINavigationController? {
         let contentView = SplashView()
-        let startViwerController = SplashViewController(contentView: contentView) //coordinator
+        let startViwerController = SplashViewController(contentView: contentView, delegate: <#any SplashFlowDelegate#>) //coordinator
         self.navigationController = UINavigationController(rootViewController: startViwerController)
         
         
         return navigationController
     }
+   
     
 }
